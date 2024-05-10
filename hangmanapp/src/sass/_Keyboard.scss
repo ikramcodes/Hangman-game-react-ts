@@ -1,0 +1,24 @@
+.keyboard {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+	gap: 0.5rem;
+	.key {
+		width: 100%;
+		aspect-ratio: 1/1;
+		background-color: white;
+		font-weight: bold;
+		font-size: 2em;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+	:hover:not(:disabled),
+	:focus:not(:disabled) {
+		background-color:  #0f79b1;
+	}
+    :active{
+        background-color:  #0f79b1;
+    }
+    :inactive{
+        opacity: .3;
+    }
+}

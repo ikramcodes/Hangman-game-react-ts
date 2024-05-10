@@ -1,0 +1,141 @@
+.hangman {
+  position: relative;
+}
+.hangman .small-horizontal-bar {
+  height: 10px;
+  width: 200px;
+  background-color: black;
+  margin-left: 120px;
+}
+.hangman .big-vertical-bar {
+  height: 400px;
+  width: 10px;
+  background-color: black;
+  margin-left: 120px;
+}
+.hangman .small-vertical-bar {
+  height: 50px;
+  width: 10px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.hangman .big-horizontal-bar {
+  height: 10px;
+  width: 250px;
+  background-color: black;
+}
+
+.head {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 10px solid black;
+  position: absolute;
+  right: -30px;
+  top: 50px;
+}
+
+.body {
+  width: 10px;
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  top: 120px;
+}
+
+.right_arm {
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  right: -100px;
+  top: 150px;
+  rotate: -20deg;
+  transform-origin: left bottom;
+}
+
+.left_arm {
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  right: 10px;
+  top: 150px;
+  rotate: 20deg;
+  transform-origin: right bottom;
+}
+
+.right_leg {
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  right: -100px;
+  top: 210px;
+  rotate: 60deg;
+  transform-origin: left top;
+}
+
+.left_leg {
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  right: 10px;
+  top: 210px;
+  rotate: -60deg;
+  transform-origin: right top;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  gap: 0.5rem;
+}
+.keyboard .key {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.keyboard :hover:not(:disabled),
+.keyboard :focus:not(:disabled) {
+  background-color: #0f79b1;
+}
+.keyboard :active {
+  background-color: #0f79b1;
+}
+.keyboard :inactive {
+  opacity: 0.3;
+}
+
+.word {
+  display: flex;
+  gap: 0.25em;
+  font-size: 6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.word .letter {
+  border-bottom: 0.1em solid black;
+}
+
+.hang {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+  align-items: center;
+}
+.hang .text {
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+}/*# sourceMappingURL=main.css.map */

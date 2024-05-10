@@ -1,0 +1,90 @@
+.hangman {
+	position: relative;
+	.small-horizontal-bar {
+		height: 10px;
+        width:200px;
+        background-color: black;
+        margin-left: 120px;
+	}
+    
+        
+	
+	.big-vertical-bar {
+		height: 400px;
+		width: 10px;
+		background-color: black;
+		margin-left: 120px;
+	}
+    .small-vertical-bar {
+		height: 50px;
+		width: 10px;
+		background-color: black;
+        position: absolute;
+        top: 0;
+        right: 0;
+       
+		}
+	.big-horizontal-bar {
+		height: 10px;
+		width: 250px;
+		background-color: black;
+	}
+}
+
+.head{
+    width:50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 10px solid black;
+    position: absolute;
+    right:-30px;
+    top: 50px;
+}
+.body{
+    width:10px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    right:0;
+    top: 120px;
+}
+.right_arm{
+    width:100px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    right:-100px;
+    top: 150px;
+    rotate: -20deg;
+    transform-origin: left bottom;
+}
+.left_arm{
+    width:100px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    right:10px;
+    top: 150px;
+    rotate: 20deg;
+    transform-origin: right bottom;
+}
+.right_leg{
+    width:100px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    right:-100px;
+    top: 210px;
+    rotate: 60deg;
+    transform-origin: left top;
+}
+.left_leg{
+    width:100px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    right:10px;
+    top: 210px;
+    rotate: -60deg;
+    transform-origin: right top;
+}
